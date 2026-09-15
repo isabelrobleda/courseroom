@@ -1,7 +1,10 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom'
+import { supabase } from './lib/supabase'
 import { useAuth } from './lib/auth'
 import Layout from './components/Layout'
 import Login from './pages/Login'
+import Account from './pages/Account'
 import StudentHome from './pages/student/StudentHome'
 import StudentCourse from './pages/student/StudentCourse'
 import StudentModule from './pages/student/StudentModule'
@@ -18,6 +21,12 @@ function Splash() {
 
 export default function App() {
   const { session, profile, loading } = useAuth()
+  const navigate = useNavigate()
+  // When a user arrives from a password-recovery email, send them to the account page.
+  useEffect(() => {
+    const { data } = supabase.auth.onAuthStateChange((event) => { if (event === 'PASSWORD_RECOVERY') navigate('/cuenta', { replace: true }) })
+    return () => data.subscription.unsubscribe()
+  }, [navigate])
   if (loading) return <Splash />
   if (!session) {
     return (
@@ -32,6 +41,7 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<StudentHome />} />
+        <Route path="/cuenta" element={<Account />} />
         <Route path="/course/:courseId" element={<StudentCourse />} />
         <Route path="/module/:moduleId" element={<StudentModule />} />
         {isAdmin && (

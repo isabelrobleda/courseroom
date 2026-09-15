@@ -12,6 +12,15 @@ export default function Login() {
   const [error, setError] = useState<string | null>(null)
   const [notice, setNotice] = useState<string | null>(null)
 
+  const forgot = async () => {
+    if (!email) { setError('Escribe tu correo arriba y vuelve a pulsar "Olvidé mi contraseña".'); return }
+    setBusy(true); setError(null); setNotice(null)
+    const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: `${window.location.origin}/cuenta` })
+    setBusy(false)
+    if (error) setError(error.message)
+    else setNotice('Te enviamos un correo con un enlace para crear una contraseña nueva.')
+  }
+
   const submit = async (e: FormEvent) => {
     e.preventDefault()
     setBusy(true); setError(null); setNotice(null)
@@ -51,6 +60,9 @@ export default function Login() {
           <ErrorBox error={error} />
           {notice && <div className="rounded-lg bg-mint-soft px-3 py-2 text-sm text-mint">{notice}</div>}
           <button className="btn-primary w-full justify-center" disabled={busy}>{mode === 'signin' ? 'Iniciar sesión' : 'Crear cuenta'}</button>
+          {mode === 'signin' && (
+            <button type="button" onClick={forgot} disabled={busy} className="w-full text-center text-sm font-semibold text-ink/50 hover:text-ink">Olvidé mi contraseña</button>
+          )}
         </form>
       </div>
     </div>

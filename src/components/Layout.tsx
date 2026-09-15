@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { BookOpen, BarChart3, Inbox, LogOut, GraduationCap, Users } from 'lucide-react'
+import { BookOpen, BarChart3, Inbox, LogOut, GraduationCap, Users, UserCircle } from 'lucide-react'
 import { useAuth } from '../lib/auth'
 import type { ReactNode } from 'react'
 
@@ -30,10 +30,13 @@ export default function Layout({ children }: { children: ReactNode }) {
               <NavLink to="/" end className={link}><BookOpen size={16} /> Mis cursos</NavLink>
             )}
           </nav>
-          <div className="hidden text-right text-xs text-ink/60 sm:block">
-            <div className="font-semibold text-ink">{profile?.full_name || profile?.email}</div>
-            <div>{isAdmin ? 'Docente' : 'Alumno'}</div>
-          </div>
+          <NavLink to="/cuenta" className="flex items-center gap-2 rounded-lg px-2 py-1 text-right text-xs text-ink/60 hover:bg-ink/5" title="Mi cuenta / cambiar contraseña">
+            <div className="hidden sm:block">
+              <div className="font-semibold text-ink">{profile?.full_name || profile?.email}</div>
+              <div>{isAdmin ? 'Docente' : 'Alumno'}</div>
+            </div>
+            <UserCircle size={22} className="text-ink/50" />
+          </NavLink>
           <button onClick={signOut} className="btn-ghost" title="Cerrar sesión"><LogOut size={16} /></button>
         </div>
       </header>
