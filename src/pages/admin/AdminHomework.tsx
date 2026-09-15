@@ -45,19 +45,19 @@ export default function AdminHomework() {
 
   return (
     <>
-      <PageTitle title="Homework inbox" subtitle="Everything students have handed in, newest first." />
+      <PageTitle title="Tareas entregadas" subtitle="Todo lo que los alumnos han entregado, lo más reciente primero." />
       <div className="mb-4 flex flex-wrap gap-3">
         <select className="input !w-auto" value={filter} onChange={(e) => setFilter(e.target.value)}>
-          <option value="">All modules</option>
+          <option value="">Todos los módulos</option>
           {homeworks.map(([id, label]) => <option key={id} value={id}>{label}</option>)}
         </select>
         <select className="input !w-auto" value={studentFilter} onChange={(e) => setStudentFilter(e.target.value)}>
-          <option value="">All students</option>
+          <option value="">Todos los alumnos</option>
           {students.map(([email, name]) => <option key={email} value={email}>{name}</option>)}
         </select>
-        <span className="self-center text-sm text-ink/50">{shown.length} submission{shown.length === 1 ? '' : 's'}</span>
+        <span className="self-center text-sm text-ink/50">{shown.length} entrega{shown.length === 1 ? '' : 's'}</span>
       </div>
-      {shown.length === 0 && <Empty>No homework submitted yet.</Empty>}
+      {shown.length === 0 && <Empty>Todavía no hay tareas entregadas.</Empty>}
       <div className="space-y-3">
         {shown.map((s) => (
           <div key={s.id} className="card">
@@ -73,7 +73,7 @@ export default function AdminHomework() {
             </div>
             {s.text_answer && <p className="whitespace-pre-wrap rounded-xl bg-ink/[0.03] p-3 text-sm">{s.text_answer}</p>}
             {s.file_path && (
-              <button onClick={() => openFile(s)} className="btn-ghost mt-2"><FileUp size={15} /> {s.file_name || 'Attachment'} <Download size={14} className="text-ink/40" /></button>
+              <button onClick={() => openFile(s)} className="btn-ghost mt-2"><FileUp size={15} /> {s.file_name || 'Archivo adjunto'} <Download size={14} className="text-ink/40" /></button>
             )}
           </div>
         ))}

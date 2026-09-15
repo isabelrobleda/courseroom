@@ -28,7 +28,7 @@ export default function ContentViewer({ item, compact = false }: { item: Content
     return (
       <div>
         <iframe src={url} title={item.title} className={`w-full rounded-xl border border-ink/10 bg-white ${compact ? 'h-72' : 'h-[75vh]'}`} />
-        <a href={url} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-ink/60 hover:text-ink"><ExternalLink size={14} /> Open PDF in new tab</a>
+        <a href={url} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-ink/60 hover:text-ink"><ExternalLink size={14} /> Abrir PDF en otra pestaña</a>
       </div>
     )
   }

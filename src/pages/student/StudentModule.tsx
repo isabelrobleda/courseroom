@@ -56,9 +56,9 @@ export default function StudentModule() {
 
   return (
     <div className="mx-auto max-w-3xl">
-      <div className="mb-2 text-sm text-ink/50"><Link to={`/course/${mod.course_id}`} className="hover:underline">Back to course</Link></div>
+      <div className="mb-2 text-sm text-ink/50"><Link to={`/course/${mod.course_id}`} className="hover:underline">Volver al curso</Link></div>
       <div className="mb-8">
-        <div className="text-xs font-semibold uppercase tracking-wide text-ink/40">Module {idx + 1} of {siblings.length}</div>
+        <div className="text-xs font-semibold uppercase tracking-wide text-ink/40">Módulo {idx + 1} de {siblings.length}</div>
         <h1 className="text-3xl font-extrabold tracking-tight">{mod.title}</h1>
         {mod.description && <p className="mt-2 text-ink/60">{mod.description}</p>}
       </div>
@@ -70,7 +70,7 @@ export default function StudentModule() {
             <ContentViewer item={it} />
           </section>
         ))}
-        {items.length === 0 && <p className="text-ink/50">No content in this module yet.</p>}
+        {items.length === 0 && <p className="text-ink/50">Este módulo aún no tiene contenido.</p>}
       </div>
 
       {quiz && questions.length > 0 && (
@@ -80,7 +80,7 @@ export default function StudentModule() {
 
       <div className="mt-12 flex justify-between border-t border-ink/10 pt-6">
         {prev ? <Link to={`/module/${prev.id}`} className="btn-ghost"><ArrowLeft size={16} /> {prev.title}</Link> : <span />}
-        {next ? <Link to={`/module/${next.id}`} className="btn-primary">{next.title} <ArrowRight size={16} /></Link> : <Link to={`/course/${mod.course_id}`} className="btn-primary">Finish course <CheckCircle2 size={16} /></Link>}
+        {next ? <Link to={`/module/${next.id}`} className="btn-primary">{next.title} <ArrowRight size={16} /></Link> : <Link to={`/course/${mod.course_id}`} className="btn-primary">Terminar curso <CheckCircle2 size={16} /></Link>}
       </div>
     </div>
   )
@@ -97,11 +97,11 @@ function QuizBlock({ quiz, questions, attempts, uid, onDone, readOnly }: { quiz:
 
   const submit = async (e: FormEvent) => {
     e.preventDefault()
-    if (Object.keys(answers).length < questions.length) { setError('Answer every question first.'); return }
+    if (Object.keys(answers).length < questions.length) { setError('Responde todas las preguntas antes de enviar.'); return }
     setBusy(true); setError(null)
     const ordered = questions.map((q) => answers[q.id])
     const score = questions.reduce((s, q, i) => s + (ordered[i] === q.correct_index ? 1 : 0), 0)
-    if (readOnly) { alert(`Preview: you would score ${score}/${questions.length}. Attempts are not saved for teachers.`); setBusy(false); return }
+    if (readOnly) { alert(`Vista previa: obtendrías ${score}/${questions.length}. Los intentos de docentes no se guardan.`); setBusy(false); return }
     const { error } = await supabase.from('quiz_attempts').insert({ user_id: uid, quiz_id: quiz.id, score, total: questions.length, answers: ordered })
     setBusy(false)
     if (error) { setError(error.message); return }
@@ -112,31 +112,31 @@ function QuizBlock({ quiz, questions, attempts, uid, onDone, readOnly }: { quiz:
     <section className="mt-12 rounded-2xl border-2 border-mint/30 bg-mint-soft/40 p-6">
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-xl font-extrabold">{quiz.title}</h2>
-        {best && <span className="badge bg-mint text-white">Best: {best.score}/{best.total}</span>}
+        {best && <span className="badge bg-mint text-white">Mejor: {best.score}/{best.total}</span>}
       </div>
       {!showForm && last ? (
         <div>
-          <p className="mb-1 text-lg font-bold">You scored {last.score} out of {last.total}{quiz.pass_score != null && (last.score >= quiz.pass_score ? ' — passed 🎉' : ` — need ${quiz.pass_score} to pass`)}</p>
-          <p className="mb-4 text-sm text-ink/60">Submitted {fmtDate(last.created_at)} · {attempts.length} attempt{attempts.length === 1 ? '' : 's'}</p>
+          <p className="mb-1 text-lg font-bold">Obtuviste {last.score} de {last.total}{quiz.pass_score != null && (last.score >= quiz.pass_score ? ' — aprobado 🎉' : ` — necesitas ${quiz.pass_score} para aprobar`)}</p>
+          <p className="mb-4 text-sm text-ink/60">Enviado el {fmtDate(last.created_at)} · {attempts.length} intento{attempts.length === 1 ? '' : 's'}</p>
           <ol className="space-y-3">
             {questions.map((q, i) => {
               const a = last.answers[i]; const ok = a === q.correct_index
               return (
                 <li key={q.id} className="rounded-xl bg-white p-4">
                   <div className="font-semibold">{i + 1}. {q.question}</div>
-                  <div className={`mt-1 text-sm ${ok ? 'text-mint' : 'text-red-600'}`}>Your answer: {q.options[a] ?? '—'} {ok ? '✓' : '✗'}</div>
-                  {!ok && <div className="text-sm text-ink/60">Correct: {q.options[q.correct_index]}</div>}
+                  <div className={`mt-1 text-sm ${ok ? 'text-mint' : 'text-red-600'}`}>Tu respuesta: {q.options[a] ?? '—'} {ok ? '✓' : '✗'}</div>
+                  {!ok && <div className="text-sm text-ink/60">Correcta: {q.options[q.correct_index]}</div>}
                 </li>
               )
             })}
           </ol>
-          <button className="btn-ghost mt-4" onClick={() => setRetaking(true)}><RotateCcw size={16} /> Retake quiz</button>
+          <button className="btn-ghost mt-4" onClick={() => setRetaking(true)}><RotateCcw size={16} /> Repetir quiz</button>
         </div>
       ) : (
         <form onSubmit={submit} className="space-y-4">
           {questions.map((q, i) => (
             <fieldset key={q.id} className="rounded-xl bg-white p-4">
-              <legend className="sr-only">Question {i + 1}</legend>
+              <legend className="sr-only">Pregunta {i + 1}</legend>
               <div className="mb-2 font-semibold">{i + 1}. {q.question}</div>
               <div className="space-y-1.5">
                 {q.options.map((o, j) => (
@@ -149,8 +149,8 @@ function QuizBlock({ quiz, questions, attempts, uid, onDone, readOnly }: { quiz:
           ))}
           <ErrorBox error={error} />
           <div className="flex gap-2">
-            <button className="btn-primary" disabled={busy}>Submit answers</button>
-            {retaking && <button type="button" className="btn-ghost" onClick={() => setRetaking(false)}>Cancel</button>}
+            <button className="btn-primary" disabled={busy}>Enviar respuestas</button>
+            {retaking && <button type="button" className="btn-ghost" onClick={() => setRetaking(false)}>Cancelar</button>}
           </div>
         </form>
       )}
@@ -171,8 +171,8 @@ function HomeworkBlock({ hw, subs, uid, onDone, readOnly }: { hw: Homework; subs
 
   const submit = async (e: FormEvent) => {
     e.preventDefault()
-    if (!text.trim() && !file) { setError('Write an answer or attach a file.'); return }
-    if (readOnly) { alert('Preview mode: teachers cannot submit homework.'); return }
+    if (!text.trim() && !file) { setError('Escribe una respuesta o adjunta un archivo.'); return }
+    if (readOnly) { alert('Vista previa: los docentes no pueden entregar tareas.'); return }
     setBusy(true); setError(null)
     try {
       const file_path = file ? await uploadHomeworkFile(uid, hw.id, file) : null
@@ -188,10 +188,10 @@ function HomeworkBlock({ hw, subs, uid, onDone, readOnly }: { hw: Homework; subs
       {hw.instructions && <p className="mb-4 whitespace-pre-wrap text-ink/70">{hw.instructions}</p>}
       {subs.length > 0 && (
         <div className="mb-5 space-y-2">
-          <div className="text-xs font-semibold uppercase tracking-wide text-ink/50">Your submissions</div>
+          <div className="text-xs font-semibold uppercase tracking-wide text-ink/50">Tus entregas</div>
           {subs.map((s) => (
             <div key={s.id} className="rounded-xl bg-white p-4 text-sm">
-              <div className="mb-1 flex items-center gap-2 font-semibold text-mint"><CheckCircle2 size={16} /> Handed in {fmtDate(s.submitted_at)}</div>
+              <div className="mb-1 flex items-center gap-2 font-semibold text-mint"><CheckCircle2 size={16} /> Entregada el {fmtDate(s.submitted_at)}</div>
               {s.text_answer && <p className="whitespace-pre-wrap text-ink/80">{s.text_answer}</p>}
               {s.file_path && <a href={links[s.id]} target="_blank" rel="noreferrer" className="mt-1 inline-flex items-center gap-1 font-semibold underline"><FileUp size={14} /> {s.file_name}</a>}
             </div>
@@ -199,11 +199,11 @@ function HomeworkBlock({ hw, subs, uid, onDone, readOnly }: { hw: Homework; subs
         </div>
       )}
       <form onSubmit={submit} className="space-y-3 rounded-xl bg-white p-4">
-        <div className="font-semibold">{subs.length ? 'Submit again' : 'Hand in your work'}</div>
-        {hw.allow_text && <textarea className="input" rows={5} placeholder="Your answer…" value={text} onChange={(e) => setText(e.target.value)} />}
+        <div className="font-semibold">{subs.length ? 'Entregar de nuevo' : 'Entrega tu trabajo'}</div>
+        {hw.allow_text && <textarea className="input" rows={5} placeholder="Tu respuesta…" value={text} onChange={(e) => setText(e.target.value)} />}
         {hw.allow_file && <input type="file" className="input" onChange={(e) => setFile(e.target.files?.[0] ?? null)} />}
         <ErrorBox error={error} />
-        <button className="btn-accent" disabled={busy}><FileUp size={16} /> {busy ? 'Uploading…' : 'Submit homework'}</button>
+        <button className="btn-accent" disabled={busy}><FileUp size={16} /> {busy ? 'Subiendo…' : 'Entregar tarea'}</button>
       </form>
     </section>
   )

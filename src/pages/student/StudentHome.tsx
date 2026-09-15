@@ -25,8 +25,8 @@ export default function StudentHome() {
 
   return (
     <>
-      <PageTitle title={`Hi, ${profile?.full_name?.split(' ')[0] || 'there'} 👋`} subtitle="Pick a course to continue learning." />
-      {courses.length === 0 && <Empty>No courses are published yet.</Empty>}
+      <PageTitle title={`Hola, ${profile?.full_name?.split(' ')[0] || ''} 👋`} subtitle="Elige un curso para continuar aprendiendo." />
+      {courses.length === 0 && <Empty>Todavía no hay cursos publicados.</Empty>}
       <div className="grid gap-4 sm:grid-cols-2">
         {courses.map((c) => {
           const pct = c.total ? Math.round((c.done / c.total) * 100) : 0
@@ -35,10 +35,10 @@ export default function StudentHome() {
               <h2 className="text-xl font-bold">{c.title}</h2>
               <p className="text-sm text-ink/60">{c.description}</p>
               <div className="mt-auto">
-                <div className="mb-1 flex justify-between text-xs font-semibold text-ink/60"><span>{c.done}/{c.total} modules</span><span>{pct}%</span></div>
+                <div className="mb-1 flex justify-between text-xs font-semibold text-ink/60"><span>{c.done}/{c.total} módulos</span><span>{pct}%</span></div>
                 <div className="h-2 overflow-hidden rounded-full bg-ink/5"><div className="h-full rounded-full bg-mint transition-all" style={{ width: `${pct}%` }} /></div>
               </div>
-              <span className="inline-flex items-center gap-1 text-sm font-semibold text-accent">Continue <ChevronRight size={16} /></span>
+              <span className="inline-flex items-center gap-1 text-sm font-semibold text-accent">Continuar <ChevronRight size={16} /></span>
             </Link>
           )
         })}

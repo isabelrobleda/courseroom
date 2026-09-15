@@ -1,0 +1,389 @@
+{
+  "course": {
+    "title": "Modelo Senda",
+    "description": "Modelo Educativo Senda · Colegio Senda · Plataforma Team Meet. Cada parte incluye el material de lectura en PDF, un quiz y una tarea abierta.",
+    "published": true
+  },
+  "modules": [
+    {
+      "title": "Parte 1: Identidad y Filosofía Senda",
+      "description": "Nosotros, nuestra filosofía educativa, cultura de pensamiento y ambientes de aprendizaje.",
+      "pdf": "Modulo4_Parte1_Identidad_y_Filosofia_Senda.pdf",
+      "pdfTitle": "Parte 1: Identidad y Filosofía Senda (lectura)",
+      "quiz": {
+        "title": "Quiz — Parte 1",
+        "questions": [
+          {
+            "q": "¿Cuál es el núcleo de la comunidad educativa del Colegio Senda?",
+            "options": [
+              "Los programas oficiales de la SEP",
+              "Los niños y jóvenes capaces de transformar su entorno",
+              "Los directivos y administrativos",
+              "Las actividades extracurriculares"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "En el siglo XXI, educar significa preparar personas que puedan:",
+            "options": [
+              "Memorizar todos los contenidos del currículo",
+              "Usar redes sociales para entretenimiento",
+              "Competir individualmente por mejores calificaciones",
+              "Pensar críticamente ante sobreabundancia de información"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "¿Qué concepción inspira la filosofía educativa de Senda?",
+            "options": [
+              "Humanista que pone al centro al ser humano",
+              "Tecnocrática y centrada en competencias laborales",
+              "Conductista basada en refuerzos externos",
+              "Académica puramente tradicional"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "Según la visión de Senda, la inteligencia es:",
+            "options": [
+              "Un rasgo fijo medido por pruebas IQ",
+              "Una capacidad modificable mediante experiencias mediadas",
+              "Exclusiva de ciertas disciplinas académicas",
+              "Determinada genéticamente sin intervención educativa"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál dimensión del desarrollo humano NO se menciona explícitamente?",
+            "options": [
+              "Dimensión cognitiva",
+              "Dimensión estética y cultural",
+              "Dimensión económica y laboral",
+              "Dimensión ética y social"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "La cultura de pensamiento se refleja en:",
+            "options": [
+              "Las expectativas, lenguaje, tiempo y rutinas del aula",
+              "Solo las calificaciones numéricas",
+              "Únicamente las clases de matemáticas",
+              "Las actividades deportivas después de clases"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "En preescolar Senda, la cultura de pensamiento se desarrolla a través de:",
+            "options": [
+              "Exámenes escritos complejos",
+              "Rutinas simples de observación y cuestionamiento",
+              "Memorización de tablas de multiplicar",
+              "Clases magistrales de 45 minutos"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál es el enfoque principal de secundaria en Senda?",
+            "options": [
+              "Clases exclusivamente teóricas",
+              "Preparación solo para universidad",
+              "Cultura del pensamiento, constructivista, aprendizaje por proyectos",
+              "Memorización intensiva para exámenes"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "En el Ambiente Tecnológico, el modelo SAMR representa:",
+            "options": [
+              "Sustitución, Aumentación, Modificación, Redefinición",
+              "Sistemas, Aplicaciones, Multimedia, Redes",
+              "Solo uso de redes sociales",
+              "Sustituir todos los libros por tablets"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Qué incluye la ciudadanía digital en Senda?",
+            "options": [
+              "Solo jugar videojuegos",
+              "Uso ético de IA, protección privacidad, detección desinformación",
+              "Pasar todo el día en TikTok",
+              "Copiar información de internet sin citar"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Parte 1: Mi mapa conceptual de la filosofía Senda siglo XXI",
+        "instructions": "1. Lee nuevamente las secciones 1.1 “Nosotros” y 1.2 “Nuestra filosofía educativa”.\n2. Crea un mapa conceptual (en papel, Canva, MindMeister, PowerPoint o herramienta digital de tu preferencia) que integre:\n   • Centro: “Persona Senda siglo XXI” (humanista + capacidades siglo XXI).\n   • Ramas principales (4 dimensiones): Cognitiva, Estética/Cultural, Ética/Social, Espiritual.\n   • Subramas: 3-4 elementos clave de cada dimensión del texto.\n   • Conexiones externas: 3-5 habilidades siglo XXI (pensamiento crítico, colaboración, IA ética, etc.) que se conecten con las dimensiones.\n\nEntrega (elige una): foto/imagen del mapa conceptual completo, o archivo (PDF, PPT, enlace Canva)."
+      }
+    },
+    {
+      "title": "Parte 2: Marco Teórico del Modelo Senda",
+      "description": "Feuerstein, Sousa, Marzano, Gardner, Project Zero, Jones y constructivismo/PBL.",
+      "pdf": "Modulo4_Parte2_Marco_Teorico_del_Modelo_Senda.pdf",
+      "pdfTitle": "Parte 2: Marco Teórico del Modelo Senda (lectura)",
+      "quiz": {
+        "title": "Quiz — Parte 2",
+        "questions": [
+          {
+            "q": "Para Feuerstein, la inteligencia se entiende principalmente como:",
+            "options": [
+              "Un coeficiente fijo medible con pruebas estandarizadas",
+              "Una capacidad innata que no se puede modificar",
+              "Un proceso dinámico de adaptación y modificabilidad",
+              "Un conjunto de conocimientos acumulados"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué es la modificabilidad según Feuerstein?",
+            "options": [
+              "La habilidad de memorizar información rápidamente",
+              "El proceso, más o menos consciente y voluntario, de cambiar de un estado a otro",
+              "La capacidad de asociar palabras e imágenes",
+              "El uso de la tecnología para aprender"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Según el modelo de Feuerstein, ¿qué describe mejor un problema de aprendizaje?",
+            "options": [
+              "No tener buena conducta en clase",
+              "Incapacidad para beneficiarse o modificarse a partir de ciertas experiencias",
+              "Falta de recursos económicos en la escuela",
+              "Nivel bajo de inteligencia innata"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "La Experiencia de Aprendizaje Mediado (EAM) se caracteriza por tres parámetros:",
+            "options": [
+              "Motivación, disciplina y memoria",
+              "Atención, repetición y evaluación",
+              "Intencionalidad, trascendencia y significado",
+              "Observación, comparación y conclusión"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Un ejemplo claro de intencionalidad en la práctica Senda es:",
+            "options": [
+              "Seleccionar cuidadosamente qué mostrar, cuándo y con qué dificultad",
+              "Dejar que los alumnos elijan todos los temas sin guía",
+              "Dar tareas repetitivas sin explicación",
+              "Permitir que los alumnos trabajen siempre solos"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "La mediación del Sentimiento de Competencia busca principalmente:",
+            "options": [
+              "Comparar a los alumnos para que se esfuercen más",
+              "Que el alumno se sienta capaz frente a los demás y frente a sí mismo",
+              "Que el alumno obtenga siempre la calificación más alta del grupo",
+              "Que el maestro controle mejor la disciplina en el aula"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Según Sousa, la inteligencia puede entenderse como:",
+            "options": [
+              "Un solo tipo de capacidad general",
+              "Únicamente la habilidad matemática y verbal",
+              "La memoria a largo plazo de datos escolares",
+              "Una aptitud multifacética que puede verse como la velocidad de aprendizaje"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "De acuerdo con Sousa, ¿por qué las emociones son clave en el aprendizaje?",
+            "options": [
+              "Porque determinan el coeficiente intelectual",
+              "Porque sólo las emociones negativas generan atención",
+              "Porque pueden impedir o fomentar el aprendizaje cognitivo según agraden o desagraden los contenidos",
+              "Porque sustituyen la práctica y el esfuerzo"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Cuál de estas afirmaciones sobre la Taxonomía de Bloom es correcta en el contexto Senda?",
+            "options": [
+              "Es un modelo rígido en el que el alumno no puede cambiar de nivel en una misma actividad",
+              "Es útil para reconocer la diferencia entre dificultad y complejidad y planear preguntas de distintos niveles",
+              "Sólo sirve para materias teóricas, no prácticas",
+              "Se usa únicamente para evaluar exámenes estandarizados"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Un ejemplo de estrategia Senda alineada con la EAM y las funciones cognitivas es:",
+            "options": [
+              "Dejar tareas sin explicar el propósito",
+              "Evaluar únicamente con preguntas de recuerdo literal",
+              "Dar 50 ejercicios repetitivos de memoria en una sola noche",
+              "Usar organizadores gráficos, práctica espaciada y conexión con la vida real"
+            ],
+            "correct": 3
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Parte 2: Secuencia didáctica breve",
+        "instructions": "Diseña una secuencia didáctica breve (una clase de 40–50 minutos) que integre el Modelo Senda y al menos dos autores o conceptos de la Parte 2 (por ejemplo, Feuerstein y la EAM; Sousa y el rol de las emociones; Taxonomía de Bloom, funciones cognitivas, operaciones mentales).\n\nEntregar planeación de clase (máx. 2 cuartillas) con:\n• Tema y grado escolar.\n• Objetivo de aprendizaje redactado.\n• Al menos una estrategia para desarrollar funciones de entrada, elaboración y salida (puede ser una actividad distinta para cada fase).\n• Una estrategia concreta de mediación del sentimiento de competencia (cómo hará visible el progreso del alumno y cómo reconocerá el esfuerzo).\n• Una actividad donde se evidencie la Experiencia de Aprendizaje Mediado (intencionalidad, trascendencia y significado) descrita explícitamente: qué hará el maestro y qué se espera del alumno en cada parámetro."
+      }
+    },
+    {
+      "title": "Parte 3: Experiencia de Aprendizaje Senda",
+      "description": "El Modelo Senda en acción: características, estructura de clase y evaluación continua.",
+      "pdf": "Modulo4_Parte3_Experiencia_de_Aprendizaje_Senda.pdf",
+      "pdfTitle": "Parte 3: Experiencia de Aprendizaje Senda (lectura)",
+      "quiz": {
+        "title": "Quiz — Parte 3",
+        "questions": [
+          {
+            "q": "¿Cuál es el núcleo fundamental de la Experiencia de Aprendizaje Senda?",
+            "options": [
+              "Cada clase genera trascendencia, aplicando el aprendizaje más allá del momento inmediato.",
+              "El maestro evalúa solo con pruebas estandarizadas.",
+              "Los alumnos trabajan únicamente de forma individual.",
+              "Se usa tecnología solo para presentaciones."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Qué principio rector implica que los alumnos expresen qué estrategias están usando durante el aprendizaje?",
+            "options": [
+              "Pensamiento visible (Project Zero)",
+              "Mediación intencional (Feuerstein)",
+              "Evaluación formativa",
+              "SAMR Redefinición tecnológica"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Cuál de las siguientes características NO forma parte de las 10 distintivas de la Experiencia de Aprendizaje Senda?",
+            "options": [
+              "Estrategias explícitas visibles en clase.",
+              "Evaluación formativa con retroalimentación inmediata.",
+              "Uso exclusivo de tecnología básica sin IA.",
+              "Trascendencia ética con reflexión de la 5.ª mente de Gardner."
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Cómo se estructura una clase Senda según el modelo?",
+            "options": [
+              "Inicio con rutina, instrucción directa, trabajo diferenciado, desafío abierto, cierre con reflexión.",
+              "Solo instrucciones directas seguidas de prueba rápida.",
+              "Trabajo individual todo el tiempo sin uso de tecnología.",
+              "Sesión libre sin estructura fija."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Qué ambientes de aprendizaje se activan en cada clase Senda?",
+            "options": [
+              "Académico, Investigación, Experimentación/Vivencial, Tecnológico",
+              "Solo Académico y Tecnológico",
+              "Solamente Investigación y Experimentación",
+              "Un ambiente por semana, rotando."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Cómo es la evaluación continua en el modelo Senda?",
+            "options": [
+              "Sistema dual con 70% cualitativa y 30% cuantitativa, con retroalimentación inmediata, específica y concreta.",
+              "Solo evaluaciones cuantitativas con tests estándar.",
+              "No se realiza evaluación para no presionar al alumno.",
+              "Solo evaluaciones escritas al final del semestre."
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Parte 3: Diseña tu primera clase Senda completa",
+        "instructions": "Crea la planeación completa de UNA CLASE SENDA (50-60 minutos) para tu grupo actual, siguiendo la estructura universal de la Parte 3.3 e integrando al menos 4 de las 10 características distintivas de la Experiencia Senda (3.2)."
+      }
+    },
+    {
+      "title": "Parte 4: El Maestro Senda",
+      "description": "Perfil, competencias, niveles de desarrollo y evaluación del Maestro Senda.",
+      "pdf": "Modulo4_Parte4_El_Maestro_Senda.pdf",
+      "pdfTitle": "Parte 4: El Maestro Senda (lectura)",
+      "quiz": {
+        "title": "Quiz — Parte 4",
+        "questions": [
+          {
+            "q": "¿Cuál es la función principal del Maestro Senda en el aula según el texto?",
+            "options": [
+              "Enseñar directamente los contenidos",
+              "Provocar que los estudiantes piensen",
+              "Solo evaluar conocimientos",
+              "Imponer normas estrictas"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Según Ritchhart, ¿qué debe hacer el maestro para cultivar una cultura de pensamiento?",
+            "options": [
+              "Dejar que los alumnos piensen solos",
+              "Pensar visiblemente y modelar el pensamiento",
+              "Solo usar IA para enseñar",
+              "Evitar preguntas en clase"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué competencias corresponden al Maestro Senda en su NIVEL 3 de desarrollo?",
+            "options": [
+              "Rutinas básicas y diagnóstico simple",
+              "Uso limitado del modelo Jones",
+              "Creación de rutinas propias y liderazgo en comunidades",
+              "Solo sustitución tecnológica"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué evalúa la entrevista semestral con la Dirección en la evaluación cualitativa del Maestro Senda?",
+            "options": [
+              "Solo resultados en exámenes",
+              "Cultura de pensamiento, modelado del maestro, y uso de estrategias pedagógicas",
+              "Puntualidad y asistencia",
+              "Solo manejo del aula"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál es la estructura típica de una clase Senda de 50 minutos?",
+            "options": [
+              "Inicio, desarrollo, examen, y cierre",
+              "Exposición, tarea, examen, y descanso",
+              "Inicio, instrucción, estaciones, desafío, cierre",
+              "Solo desarrollo y evaluación"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué herramientas forman parte del Modelo Senda para fomentar una cultura de pensamiento?",
+            "options": [
+              "Solo tecnologías y exámenes",
+              "Inteligencias múltiples, rutinas Project Zero, modelo Jones y tecnología SAMR",
+              "Solo lectura y memorización",
+              "Uso exclusivo de IA sin intervención humana"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Parte 4: Mi Perfil como Maestro Senda",
+        "instructions": "Elabora tu autodiagnóstico de competencias Senda y un plan de desarrollo personal (PDP) para el próximo trimestre, identificando tu nivel actual (Aprendiz, Practicante o Maestro Senda) según la tabla 4.3."
+      }
+    }
+  ]
+}

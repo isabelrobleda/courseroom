@@ -38,7 +38,7 @@ export function Modal({ title, onClose, children }: { title: string; onClose: ()
 
 /** Tiny inline "title + description" form used for creating courses/modules. */
 export function QuickForm({
-  onSubmit, submitLabel = 'Save', placeholder = 'Title', withDescription = true, initial,
+  onSubmit, submitLabel = 'Guardar', placeholder = 'Título', withDescription = true, initial,
 }: {
   onSubmit: (v: { title: string; description: string }) => Promise<void>
   submitLabel?: string; placeholder?: string; withDescription?: boolean
@@ -59,7 +59,7 @@ export function QuickForm({
   return (
     <form onSubmit={submit} className="space-y-3">
       <input className="input" placeholder={placeholder} value={title} onChange={(e) => setTitle(e.target.value)} autoFocus />
-      {withDescription && <textarea className="input" rows={3} placeholder="Description (optional)" value={description} onChange={(e) => setDescription(e.target.value)} />}
+      {withDescription && <textarea className="input" rows={3} placeholder="Descripción (opcional)" value={description} onChange={(e) => setDescription(e.target.value)} />}
       <ErrorBox error={error} />
       <div className="flex justify-end"><button className="btn-primary" disabled={busy}>{submitLabel}</button></div>
     </form>
@@ -68,5 +68,5 @@ export function QuickForm({
 
 export function fmtDate(d: string | null | undefined) {
   if (!d) return ''
-  return new Date(d).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })
+  return new Date(d).toLocaleString('es-ES', { dateStyle: 'medium', timeStyle: 'short' })
 }

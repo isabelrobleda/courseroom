@@ -25,16 +25,16 @@ export default function AdminCourses() {
     load()
   }
   const remove = async (c: Course) => {
-    if (!confirm(`Delete "${c.title}" and all its modules, quizzes and student progress?`)) return
+    if (!confirm(`¿Eliminar "${c.title}" con todos sus módulos, quizzes y el progreso de los alumnos?`)) return
     await supabase.from('courses').delete().eq('id', c.id)
     load()
   }
 
   return (
     <>
-      <PageTitle title="Courses" subtitle="Each course is a set of modules with content, a quiz and homework."
-        actions={<button className="btn-accent" onClick={() => setCreating(true)}><Plus size={16} /> New course</button>} />
-      {courses.length === 0 && <Empty>No courses yet. Create your first one.</Empty>}
+      <PageTitle title="Cursos" subtitle="Cada curso es un conjunto de módulos con contenido, quiz y tarea."
+        actions={<button className="btn-accent" onClick={() => setCreating(true)}><Plus size={16} /> Nuevo curso</button>} />
+      {courses.length === 0 && <Empty>Aún no hay cursos. Crea el primero.</Empty>}
       <div className="grid gap-3 sm:grid-cols-2">
         {courses.map((c) => (
           <div key={c.id} className="card flex flex-col gap-3">
@@ -43,22 +43,22 @@ export default function AdminCourses() {
                 <Link to={`/admin/course/${c.id}`} className="text-lg font-bold hover:underline">{c.title}</Link>
                 <p className="text-sm text-ink/60">{c.description}</p>
               </div>
-              <span className={`badge ${c.published ? 'bg-mint-soft text-mint' : 'bg-ink/5 text-ink/50'}`}>{c.published ? 'Published' : 'Draft'}</span>
+              <span className={`badge ${c.published ? 'bg-mint-soft text-mint' : 'bg-ink/5 text-ink/50'}`}>{c.published ? 'Publicado' : 'Borrador'}</span>
             </div>
             <div className="mt-auto flex items-center justify-between text-sm text-ink/60">
-              <span>{counts[c.id] ?? 0} module{(counts[c.id] ?? 0) === 1 ? '' : 's'}</span>
+              <span>{counts[c.id] ?? 0} módulo{(counts[c.id] ?? 0) === 1 ? '' : 's'}</span>
               <div className="flex gap-1">
-                <button className="btn-ghost !px-2" onClick={() => togglePublish(c)} title={c.published ? 'Unpublish' : 'Publish'}>{c.published ? <EyeOff size={15} /> : <Eye size={15} />}</button>
+                <button className="btn-ghost !px-2" onClick={() => togglePublish(c)} title={c.published ? 'Despublicar' : 'Publicar'}>{c.published ? <EyeOff size={15} /> : <Eye size={15} />}</button>
                 <button className="btn-danger !px-2" onClick={() => remove(c)}><Trash2 size={15} /></button>
-                <Link to={`/admin/course/${c.id}`} className="btn-primary !px-3">Open <ChevronRight size={15} /></Link>
+                <Link to={`/admin/course/${c.id}`} className="btn-primary !px-3">Abrir <ChevronRight size={15} /></Link>
               </div>
             </div>
           </div>
         ))}
       </div>
       {creating && (
-        <Modal title="New course" onClose={() => setCreating(false)}>
-          <QuickForm submitLabel="Create course" placeholder="Course title" onSubmit={async (v) => {
+        <Modal title="Nuevo curso" onClose={() => setCreating(false)}>
+          <QuickForm submitLabel="Crear curso" placeholder="Título del curso" onSubmit={async (v) => {
             const { error } = await supabase.from('courses').insert({ title: v.title, description: v.description || null })
             if (error) throw error
             setCreating(false); load()

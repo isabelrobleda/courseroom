@@ -44,14 +44,14 @@ export default function AdminReports() {
 
   const exportDetail = () => {
     const csv = toCsv(filtered.map((r) => ({
-      student_name: r.full_name ?? '', student_email: r.email, course: r.course_title,
-      module_number: r.module_position + 1, module: r.module_title,
-      module_read: r.module_read ? 'yes' : 'no', read_at: r.viewed_at ?? '',
-      has_quiz: r.quiz_id ? 'yes' : 'no', quiz_done: r.quiz_id ? (r.best_score != null ? 'yes' : 'no') : '',
-      quiz_best_score: r.best_score ?? '', quiz_total_questions: r.quiz_total ?? '', quiz_attempts: r.quiz_id ? r.quiz_attempts : '',
-      has_homework: r.homework_id ? 'yes' : 'no', homework_submitted: r.homework_id ? (r.homework_submitted ? 'yes' : 'no') : '', homework_submitted_at: r.homework_submitted_at ?? '',
+      alumno: r.full_name ?? '', correo: r.email, curso: r.course_title,
+      modulo_num: r.module_position + 1, modulo: r.module_title,
+      leido: r.module_read ? 'sí' : 'no', fecha_lectura: r.viewed_at ?? '',
+      tiene_quiz: r.quiz_id ? 'sí' : 'no', quiz_realizado: r.quiz_id ? (r.best_score != null ? 'sí' : 'no') : '',
+      quiz_mejor_puntaje: r.best_score ?? '', quiz_total_preguntas: r.quiz_total ?? '', quiz_intentos: r.quiz_id ? r.quiz_attempts : '',
+      tiene_tarea: r.homework_id ? 'sí' : 'no', tarea_entregada: r.homework_id ? (r.homework_submitted ? 'sí' : 'no') : '', fecha_entrega_tarea: r.homework_submitted_at ?? '',
     })))
-    downloadCsv(`report_${courses.find((c) => c[0] === courseId)?.[1] ?? 'course'}_detail.csv`, csv)
+    downloadCsv(`reporte_${courses.find((c) => c[0] === courseId)?.[1] ?? 'curso'}_detalle.csv`, csv)
   }
   const exportSummary = () => {
     const csv = toCsv(students.map(([uid, s]) => {
@@ -60,44 +60,44 @@ export default function AdminReports() {
       const hws = mine.filter((r) => r.homework_id)
       const scored = quizzes.filter((r) => r.best_score != null)
       return {
-        student_name: s.name ?? '', student_email: s.email,
-        modules_total: mine.length, modules_read: mine.filter((r) => r.module_read).length,
-        quizzes_total: quizzes.length, quizzes_done: scored.length,
-        quiz_correct_answers: scored.reduce((a, r) => a + (r.best_score ?? 0), 0),
-        quiz_total_questions: scored.reduce((a, r) => a + (r.quiz_total ?? 0), 0),
-        homework_total: hws.length, homework_submitted: hws.filter((r) => r.homework_submitted).length,
+        alumno: s.name ?? '', correo: s.email,
+        modulos_total: mine.length, modulos_leidos: mine.filter((r) => r.module_read).length,
+        quizzes_total: quizzes.length, quizzes_realizados: scored.length,
+        respuestas_correctas: scored.reduce((a, r) => a + (r.best_score ?? 0), 0),
+        preguntas_total: scored.reduce((a, r) => a + (r.quiz_total ?? 0), 0),
+        tareas_total: hws.length, tareas_entregadas: hws.filter((r) => r.homework_submitted).length,
       }
     }))
-    downloadCsv(`report_${courses.find((c) => c[0] === courseId)?.[1] ?? 'course'}_summary.csv`, csv)
+    downloadCsv(`reporte_${courses.find((c) => c[0] === courseId)?.[1] ?? 'curso'}_resumen.csv`, csv)
   }
 
   return (
     <>
-      <PageTitle title="Reports" subtitle="Who has read each module, quiz scores and homework hand-ins."
+      <PageTitle title="Reportes" subtitle="Quién ha leído cada módulo, resultados de quizzes y entregas de tareas."
         actions={<>
-          <button className="btn-ghost" onClick={exportSummary} disabled={!filtered.length}><Download size={16} /> Summary CSV</button>
-          <button className="btn-primary" onClick={exportDetail} disabled={!filtered.length}><Download size={16} /> Detailed CSV</button>
+          <button className="btn-ghost" onClick={exportSummary} disabled={!filtered.length}><Download size={16} /> CSV resumen</button>
+          <button className="btn-primary" onClick={exportDetail} disabled={!filtered.length}><Download size={16} /> CSV detallado</button>
         </>} />
       <div className="mb-4 flex flex-wrap items-center gap-3">
         <select className="input !w-auto" value={courseId} onChange={(e) => setCourseId(e.target.value)}>
           {courses.map(([id, t]) => <option key={id} value={id}>{t}</option>)}
         </select>
         <div className="flex rounded-lg bg-ink/5 p-1 text-sm font-semibold">
-          {(['matrix', 'detail'] as const).map((v) => <button key={v} onClick={() => setView(v)} className={`rounded-md px-3 py-1 capitalize ${view === v ? 'bg-white shadow-sm' : 'text-ink/50'}`}>{v}</button>)}
+          {(['matrix', 'detail'] as const).map((v) => <button key={v} onClick={() => setView(v)} className={`rounded-md px-3 py-1 ${view === v ? 'bg-white shadow-sm' : 'text-ink/50'}`}>{v === 'matrix' ? 'Matriz' : 'Detalle'}</button>)}
         </div>
-        <span className="text-sm text-ink/50">{students.length} student{students.length === 1 ? '' : 's'}</span>
+        <span className="text-sm text-ink/50">{students.length} alumno{students.length === 1 ? '' : 's'}</span>
       </div>
 
-      {students.length === 0 && <Empty>No students have signed up yet (or this course has no modules).</Empty>}
+      {students.length === 0 && <Empty>Todavía no hay alumnos registrados (o este curso no tiene módulos).</Empty>}
 
       {students.length > 0 && view === 'matrix' && (
         <div className="card overflow-x-auto !p-0">
           <table className="w-full text-sm">
             <thead className="bg-ink/5 text-left text-xs uppercase tracking-wide text-ink/60">
               <tr>
-                <th className="sticky left-0 bg-ink/5 px-4 py-3">Student</th>
+                <th className="sticky left-0 bg-ink/5 px-4 py-3">Alumno</th>
                 {modules.map(([id, m], i) => <th key={id} className="px-3 py-3 text-center font-semibold" title={m.title}>M{i + 1}</th>)}
-                <th className="px-4 py-3 text-right">Quiz total</th>
+                <th className="px-4 py-3 text-right">Total quizzes</th>
               </tr>
             </thead>
             <tbody>
@@ -112,7 +112,7 @@ export default function AdminReports() {
                       return (
                         <td key={mid} className="px-3 py-2">
                           <div className="flex flex-col items-center gap-1">
-                            <span className={`grid h-6 w-6 place-items-center rounded-full ${r?.module_read ? 'bg-mint text-white' : 'bg-ink/5 text-ink/30'}`} title={r?.module_read ? `Read ${fmtDate(r.viewed_at)}` : 'Not read'}>{r?.module_read ? <Check size={14} /> : <Minus size={14} />}</span>
+                            <span className={`grid h-6 w-6 place-items-center rounded-full ${r?.module_read ? 'bg-mint text-white' : 'bg-ink/5 text-ink/30'}`} title={r?.module_read ? `Leído el ${fmtDate(r.viewed_at)}` : 'No leído'}>{r?.module_read ? <Check size={14} /> : <Minus size={14} />}</span>
                             {m.hasQuiz && <span className={`text-xs font-bold ${r?.best_score != null ? 'text-mint' : 'text-ink/30'}`}>{r?.best_score != null ? `${r.best_score}/${r.quiz_total}` : '–/–'}</span>}
                             {m.hasHw && <span className={`badge !px-1.5 !py-0 ${r?.homework_submitted ? 'bg-accent-soft text-accent' : 'bg-ink/5 text-ink/30'}`}>HW</span>}
                           </div>
@@ -126,9 +126,9 @@ export default function AdminReports() {
             </tbody>
           </table>
           <div className="flex flex-wrap gap-4 border-t border-ink/5 px-4 py-2 text-xs text-ink/50">
-            <span><span className="inline-block h-3 w-3 rounded-full bg-mint align-middle" /> module read</span>
-            <span><b className="text-mint">3/5</b> best quiz score</span>
-            <span><span className="badge !px-1.5 !py-0 bg-accent-soft text-accent">HW</span> homework handed in</span>
+            <span><span className="inline-block h-3 w-3 rounded-full bg-mint align-middle" /> módulo leído</span>
+            <span><b className="text-mint">3/5</b> mejor resultado del quiz</span>
+            <span><span className="badge !px-1.5 !py-0 bg-accent-soft text-accent">HW</span> tarea entregada</span>
             {modules.map(([id, m], i) => <span key={id}>M{i + 1} = {m.title}</span>)}
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function AdminReports() {
         <div className="card overflow-x-auto !p-0">
           <table className="w-full text-sm">
             <thead className="bg-ink/5 text-left text-xs uppercase tracking-wide text-ink/60">
-              <tr><th className="px-4 py-3">Student</th><th className="px-4 py-3">Module</th><th className="px-4 py-3">Read</th><th className="px-4 py-3">Quiz</th><th className="px-4 py-3">Attempts</th><th className="px-4 py-3">Homework</th></tr>
+              <tr><th className="px-4 py-3">Alumno</th><th className="px-4 py-3">Módulo</th><th className="px-4 py-3">Leído</th><th className="px-4 py-3">Quiz</th><th className="px-4 py-3">Intentos</th><th className="px-4 py-3">Tarea</th></tr>
             </thead>
             <tbody>
               {filtered.map((r) => (
@@ -146,9 +146,9 @@ export default function AdminReports() {
                   <td className="px-4 py-2"><div className="font-semibold">{r.full_name || r.email}</div><div className="text-xs text-ink/50">{r.email}</div></td>
                   <td className="px-4 py-2">{r.module_position + 1}. {r.module_title}</td>
                   <td className="px-4 py-2">{r.module_read ? <span className="text-mint">✓ {fmtDate(r.viewed_at)}</span> : <span className="text-ink/30">—</span>}</td>
-                  <td className="px-4 py-2">{r.quiz_id ? (r.best_score != null ? <b>{r.best_score}/{r.quiz_total}</b> : <span className="text-ink/30">not done</span>) : <span className="text-ink/20">no quiz</span>}</td>
+                  <td className="px-4 py-2">{r.quiz_id ? (r.best_score != null ? <b>{r.best_score}/{r.quiz_total}</b> : <span className="text-ink/30">sin hacer</span>) : <span className="text-ink/20">sin quiz</span>}</td>
                   <td className="px-4 py-2">{r.quiz_id ? r.quiz_attempts : ''}</td>
-                  <td className="px-4 py-2">{r.homework_id ? (r.homework_submitted ? <span className="text-accent">✓ {fmtDate(r.homework_submitted_at)}</span> : <span className="text-ink/30">missing</span>) : <span className="text-ink/20">no homework</span>}</td>
+                  <td className="px-4 py-2">{r.homework_id ? (r.homework_submitted ? <span className="text-accent">✓ {fmtDate(r.homework_submitted_at)}</span> : <span className="text-ink/30">pendiente</span>) : <span className="text-ink/20">sin tarea</span>}</td>
                 </tr>
               ))}
             </tbody>

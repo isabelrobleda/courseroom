@@ -44,7 +44,7 @@ export default function StudentCourse() {
   if (!course) return null
   return (
     <>
-      <div className="mb-2 text-sm text-ink/50"><Link to="/" className="hover:underline">My courses</Link> / {course.title}</div>
+      <div className="mb-2 text-sm text-ink/50"><Link to="/" className="hover:underline">Mis cursos</Link> / {course.title}</div>
       <PageTitle title={course.title} subtitle={course.description} />
       <ol className="space-y-2">
         {rows.map((m, i) => (
@@ -52,13 +52,13 @@ export default function StudentCourse() {
             <Link to={`/module/${m.id}`} className="card flex items-center gap-4 !py-4 transition hover:shadow-md">
               {m.read ? <CheckCircle2 className="shrink-0 text-mint" /> : <Circle className="shrink-0 text-ink/20" />}
               <div className="min-w-0 flex-1">
-                <div className="text-xs font-semibold uppercase tracking-wide text-ink/40">Module {i + 1}</div>
+                <div className="text-xs font-semibold uppercase tracking-wide text-ink/40">Módulo {i + 1}</div>
                 <div className="font-bold">{m.title}</div>
                 {m.description && <div className="truncate text-sm text-ink/60">{m.description}</div>}
               </div>
               <div className="flex shrink-0 gap-2 text-xs font-semibold">
                 {m.hasQuiz && <span className={`badge gap-1 ${m.quizScore ? 'bg-mint-soft text-mint' : 'bg-ink/5 text-ink/50'}`}><ClipboardList size={12} /> {m.quizScore ?? 'Quiz'}</span>}
-                {m.hasHw && <span className={`badge gap-1 ${m.hwDone ? 'bg-mint-soft text-mint' : 'bg-accent-soft text-accent'}`}><FileUp size={12} /> {m.hwDone ? 'Handed in' : 'Homework'}</span>}
+                {m.hasHw && <span className={`badge gap-1 ${m.hwDone ? 'bg-mint-soft text-mint' : 'bg-accent-soft text-accent'}`}><FileUp size={12} /> {m.hwDone ? 'Entregada' : 'Tarea'}</span>}
               </div>
             </Link>
           </li>

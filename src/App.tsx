@@ -13,7 +13,7 @@ import AdminHomework from './pages/admin/AdminHomework'
 import AdminStudents from './pages/admin/AdminStudents'
 
 function Splash() {
-  return <div className="grid min-h-screen place-items-center text-ink/50">Loading…</div>
+  return <div className="grid min-h-screen place-items-center text-ink/50">Cargando…</div>
 }
 
 export default function App() {

@@ -20,21 +20,21 @@ export default function Layout({ children }: { children: ReactNode }) {
           <nav className="flex flex-1 items-center gap-1 overflow-x-auto">
             {isAdmin ? (
               <>
-                <NavLink to="/admin" end className={link}><BookOpen size={16} /> Courses</NavLink>
-                <NavLink to="/admin/reports" className={link}><BarChart3 size={16} /> Reports</NavLink>
-                <NavLink to="/admin/homework" className={link}><Inbox size={16} /> Homework</NavLink>
-                <NavLink to="/admin/students" className={link}><Users size={16} /> Students</NavLink>
-                <NavLink to="/" end className={link}><GraduationCap size={16} /> Student view</NavLink>
+                <NavLink to="/admin" end className={link}><BookOpen size={16} /> Cursos</NavLink>
+                <NavLink to="/admin/reports" className={link}><BarChart3 size={16} /> Reportes</NavLink>
+                <NavLink to="/admin/homework" className={link}><Inbox size={16} /> Tareas</NavLink>
+                <NavLink to="/admin/students" className={link}><Users size={16} /> Alumnos</NavLink>
+                <NavLink to="/" end className={link}><GraduationCap size={16} /> Vista de alumno</NavLink>
               </>
             ) : (
-              <NavLink to="/" end className={link}><BookOpen size={16} /> My courses</NavLink>
+              <NavLink to="/" end className={link}><BookOpen size={16} /> Mis cursos</NavLink>
             )}
           </nav>
           <div className="hidden text-right text-xs text-ink/60 sm:block">
             <div className="font-semibold text-ink">{profile?.full_name || profile?.email}</div>
-            <div>{isAdmin ? 'Teacher' : 'Student'}</div>
+            <div>{isAdmin ? 'Docente' : 'Alumno'}</div>
           </div>
-          <button onClick={signOut} className="btn-ghost" title="Sign out"><LogOut size={16} /></button>
+          <button onClick={signOut} className="btn-ghost" title="Cerrar sesión"><LogOut size={16} /></button>
         </div>
       </header>
       <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>

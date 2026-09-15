@@ -22,7 +22,7 @@ export default function Login() {
       } else {
         const { data, error } = await supabase.auth.signUp({ email, password, options: { data: { full_name: name } } })
         if (error) throw error
-        if (!data.session) setNotice('Check your inbox to confirm your email, then sign in.')
+        if (!data.session) setNotice('Revisa tu correo para confirmar tu cuenta y después inicia sesión.')
       }
     } catch (err) { setError((err as Error).message) }
     finally { setBusy(false) }
@@ -39,18 +39,18 @@ export default function Login() {
           <div className="grid grid-cols-2 rounded-lg bg-ink/5 p-1 text-sm font-semibold">
             {(['signin', 'signup'] as const).map((m) => (
               <button type="button" key={m} onClick={() => setMode(m)} className={`rounded-md py-1.5 ${mode === m ? 'bg-white shadow-sm' : 'text-ink/50'}`}>
-                {m === 'signin' ? 'Sign in' : 'Create account'}
+                {m === 'signin' ? 'Iniciar sesión' : 'Crear cuenta'}
               </button>
             ))}
           </div>
           {mode === 'signup' && (
-            <div><label className="label">Full name</label><input className="input" value={name} onChange={(e) => setName(e.target.value)} required /></div>
+            <div><label className="label">Nombre completo</label><input className="input" value={name} onChange={(e) => setName(e.target.value)} required /></div>
           )}
-          <div><label className="label">Email</label><input className="input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required /></div>
-          <div><label className="label">Password</label><input className="input" type="password" minLength={6} value={password} onChange={(e) => setPassword(e.target.value)} required /></div>
+          <div><label className="label">Correo electrónico</label><input className="input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required /></div>
+          <div><label className="label">Contraseña</label><input className="input" type="password" minLength={6} value={password} onChange={(e) => setPassword(e.target.value)} required /></div>
           <ErrorBox error={error} />
           {notice && <div className="rounded-lg bg-mint-soft px-3 py-2 text-sm text-mint">{notice}</div>}
-          <button className="btn-primary w-full justify-center" disabled={busy}>{mode === 'signin' ? 'Sign in' : 'Create account'}</button>
+          <button className="btn-primary w-full justify-center" disabled={busy}>{mode === 'signin' ? 'Iniciar sesión' : 'Crear cuenta'}</button>
         </form>
       </div>
     </div>

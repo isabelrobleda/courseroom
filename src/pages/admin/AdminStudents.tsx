@@ -14,18 +14,18 @@ export default function AdminStudents() {
 
   const setRole = async (p: Profile, role: Profile['role']) => {
     if (p.id === me?.id) return
-    if (role === 'admin' && !confirm(`Make ${p.email} a teacher? They will see all reports and can edit courses.`)) return
+    if (role === 'admin' && !confirm(`¿Hacer docente a ${p.email}? Podrá ver todos los reportes y editar los cursos.`)) return
     await supabase.from('profiles').update({ role }).eq('id', p.id); load()
   }
-  const exportCsv = () => downloadCsv('students.csv', toCsv(people.map((p) => ({ name: p.full_name ?? '', email: p.email, role: p.role, joined: p.created_at }))))
+  const exportCsv = () => downloadCsv('alumnos.csv', toCsv(people.map((p) => ({ nombre: p.full_name ?? '', correo: p.email, rol: p.role === 'admin' ? 'docente' : 'alumno', registro: p.created_at }))))
 
   return (
     <>
-      <PageTitle title="Students" subtitle="Everyone who has created an account." actions={<button className="btn-ghost" onClick={exportCsv}><Download size={16} /> CSV</button>} />
-      {people.length === 0 && <Empty>Nobody yet.</Empty>}
+      <PageTitle title="Alumnos" subtitle="Todas las personas que han creado una cuenta." actions={<button className="btn-ghost" onClick={exportCsv}><Download size={16} /> CSV</button>} />
+      {people.length === 0 && <Empty>Todavía no hay nadie.</Empty>}
       <div className="card overflow-x-auto !p-0">
         <table className="w-full text-sm">
-          <thead className="bg-ink/5 text-left text-xs uppercase tracking-wide text-ink/60"><tr><th className="px-4 py-3">Name</th><th className="px-4 py-3">Email</th><th className="px-4 py-3">Joined</th><th className="px-4 py-3">Role</th></tr></thead>
+          <thead className="bg-ink/5 text-left text-xs uppercase tracking-wide text-ink/60"><tr><th className="px-4 py-3">Nombre</th><th className="px-4 py-3">Correo</th><th className="px-4 py-3">Registro</th><th className="px-4 py-3">Rol</th></tr></thead>
           <tbody>
             {people.map((p) => (
               <tr key={p.id} className="border-t border-ink/5">
@@ -34,7 +34,7 @@ export default function AdminStudents() {
                 <td className="px-4 py-2 text-ink/60">{fmtDate(p.created_at)}</td>
                 <td className="px-4 py-2">
                   <select className="input !w-auto !py-1" value={p.role} disabled={p.id === me?.id} onChange={(e) => setRole(p, e.target.value as Profile['role'])}>
-                    <option value="student">Student</option><option value="admin">Teacher</option>
+                    <option value="student">Alumno</option><option value="admin">Docente</option>
                   </select>
                 </td>
               </tr>
