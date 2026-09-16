@@ -1,0 +1,757 @@
+{
+  "course": {
+    "title": "Módulo 1: Kit de herramientas para docentes",
+    "description": "Kit de herramientas para docentes · Colegio Senda · Plataforma Team Meet. Resúmenes por capítulo con quiz y tarea.",
+    "published": true
+  },
+  "modules": [
+    {
+      "title": "Capítulo 4: Arreglando el salón",
+      "pdf": "M1_03_Capitulo_4_Arreglando_el_salon.pdf",
+      "pdfTitle": "Capítulo 4: Arreglando el salón (lectura)",
+      "quiz": {
+        "title": "Quiz — Capítulo 4",
+        "questions": [
+          {
+            "q": "¿Qué recomendación clave se menciona para mejorar la disposición física del aula en el capítulo 4?",
+            "options": [
+              "Mover o eliminar el escritorio del maestro del frente del salón.",
+              "Colocar más muebles en el centro del salón.",
+              "Pintar las paredes de colores brillantes.",
+              "Dejar los pasillos estrechos para fomentar la cercanía entre los alumnos."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Por qué es importante crear pasillos amplios en el aula según el texto?",
+            "options": [
+              "Para fomentar la independencia de los alumnos.",
+              "Para permitir al maestro pasar cerca de todos los alumnos sin tropezar.",
+              "Para aumentar la distancia entre el maestro y los estudiantes.",
+              "Para estimular la impuntualidad en el salón."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué estrategias prácticas se recomiendan para mejorar el espacio en el aula según el capítulo 4?",
+            "options": [
+              "Alejar a los alumnos del frente para fomentar la distancia con el docente.",
+              "Compactar filas hacia los lados para liberar espacio central y crear avenidas.",
+              "Crear pasillos estrechos para un mayor control de los alumnos.",
+              "Contar los pasos necesarios para aumentar la movilidad del grupo."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Según el capítulo, ¿cuál es el principal obstáculo para que un maestro pueda trabajar a la multitud en un salón típico?",
+            "options": [
+              "La falta de tecnología moderna en el aula",
+              "El ruido externo que distrae a los alumnos",
+              "El acomodo de los muebles hecho para facilitar la limpieza",
+              "La cantidad de materiales visuales en las paredes"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Por qué se recomienda mover o eliminar el escritorio del maestro del frente del salón?",
+            "options": [
+              "Porque ocupa demasiado espacio y dificulta la limpieza",
+              "Porque impide que el maestro pueda proyectar su voz adecuadamente",
+              "Porque aumenta la distancia con los alumnos y dificulta mantenerlos en zonas de proximidad",
+              "Porque distrae a los estudiantes al estar lleno de objetos personales"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué característica debe tener un buen arreglo de salón para facilitar el control del grupo?",
+            "options": [
+              "Pasillos angostos que ocupen poco espacio",
+              "Un pasillo central largo para llegar fácilmente al fondo",
+              "Pasillos amplios y un circuito interior que reduzca la distancia al supervisar",
+              "Filas muy separadas para que los alumnos tengan más espacio personal"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Capítulo 4: Arreglando el salón",
+        "instructions": "Redacta una mini guía de una página titulada: Cómo reorganizar tu salón para mantener el control del grupo. Incluye recomendaciones concretas como mover el escritorio, crear pasillos amplios, evitar filas largas y mantener un circuito interior.",
+        "allowFile": false,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Capítulos 5 & 6",
+      "pdf": "M1_04_Capitulos_5_y_6.pdf",
+      "pdfTitle": "Capítulos 5 & 6 (lectura)",
+      "quiz": {
+        "title": "Quiz — Capítulos 5 & 6",
+        "questions": [
+          {
+            "q": "¿Qué tipo de dependencia se menciona en el capítulo 5?",
+            "options": [
+              "Dependencia emocional de los maestros",
+              "Dependencia crónica de los alumnos",
+              "Independencia de los maestros",
+              "Dependencia de los padres"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué estrategia se recomienda para fomentar la independencia del alumno según el texto?",
+            "options": [
+              "Resolver todo por el alumno",
+              "Ayudar de manera breve y precisa",
+              "Ignorar por completo a los alumnos",
+              "Dejar que los alumnos dependan siempre de los maestros"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué se menciona como un problema en la retroalimentación verbal en el capítulo 6?",
+            "options": [
+              "Explicaciones claras y completas",
+              "Respirar y controlar la reacción emocional",
+              "Sarcasmo y quejas",
+              "Ayudar a los alumnos a comprender completamente"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué beneficio se destaca al evitar el diálogo innecesario según el texto?",
+            "options": [
+              "Mejora la comprensión de los alumnos",
+              "Beneficia a los alumnos que buscan atención prolongada",
+              "Genera independencia en los alumnos",
+              "Aumenta la dependencia de los maestros"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Durante la fase llamada “trabaja hasta morir” en una clase típica:",
+            "options": [
+              "Los alumnos trabajan de manera independiente sin interrupciones.",
+              "El maestro explica y presenta el material mientras los alumnos suelen atender.",
+              "Los alumnos se distraen y comienzan a holgazanear de inmediato.",
+              "El maestro se mueve constantemente para trabajar a la multitud."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué caracteriza a los llamados “levanta manos dependientes”?",
+            "options": [
+              "Son alumnos que buscan atención pero parecen entusiastas y con sed de conocimiento.",
+              "Son alumnos que trabajan de forma autónoma sin requerir ayuda.",
+              "Son estudiantes con problemas graves de conducta.",
+              "Son alumnos que nunca piden apoyo porque temen hacer el ridículo."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "Según el texto, ¿qué acción bienintencionada puede aumentar el número de alumnos dependientes?",
+            "options": [
+              "Cambiar el arreglo del salón para facilitar el movimiento.",
+              "Dar retroalimentación puntual y breve.",
+              "Agregar un maestro de apoyo dentro del salón.",
+              "Usar peticiones de inicio en lugar de peticiones de final."
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Por qué explicar varios pasos seguidos puede ser ineficaz para un alumno atascado?",
+            "options": [
+              "Porque la memoria visual a largo plazo no funciona en el aula.",
+              "Porque la memoria auditiva a largo plazo es limitada y el alumno olvida la explicación poco después.",
+              "Porque los alumnos no prestan atención durante la práctica guiada.",
+              "Porque aumenta la motivación del alumno pero no su aprendizaje."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál de las siguientes es una petición de inicio?",
+            "options": [
+              "“Deja de distraerte.”",
+              "“No escribas eso.”",
+              "“Empieza resolviendo el paso dos ahora.”",
+              "“No hables mientras trabajas.”"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Cuál es el orden sugerido para dar retroalimentación correctiva?",
+            "options": [
+              "Preguntar dónde se equivocó – explicar todo el problema – quedarse a verificar.",
+              "Identificar lo incorrecto – dar varias indicaciones – elogiar – irse.",
+              "Respirar – elogiar (si es necesario) – dar un aviso puntual – irse.",
+              "Hacer preguntas abiertas – explicar la solución completa – dar una petición de final."
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Capítulos 5 & 6",
+        "instructions": "Crea un mapa conceptual (en Canva, en papel o donde te sea más cómodo) que explique la relación entre estos elementos:\n\n• Proximidad física y control del grupo Dependencia y autonomía Retroalimentación correctiva Memoria a corto y largo plazo Lenguaje verbal del maestro",
+        "allowFile": true,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Capítulo 7: Enseñando a la modalidad visual",
+      "pdf": "M1_05_Capitulo_7_Modalidad_visual.pdf",
+      "pdfTitle": "Capítulo 7: Enseñando a la modalidad visual (lectura)",
+      "quiz": {
+        "title": "Quiz — Capítulo 7",
+        "questions": [
+          {
+            "q": "¿Qué significa VIPs en el contexto del texto?",
+            "options": [
+              "Valid Instructional Plans",
+              "Visual Instructional Plans",
+              "Verbal Instructive Procedures"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál es uno de los problemas mencionados en el texto sobre el exceso de palabras en la enseñanza verbal?",
+            "options": [
+              "Los alumnos no comprenden las instrucciones visuales",
+              "Los maestros hablan menos de 10 segundos por intervención",
+              "Los maestros tienden a usar demasiadas palabras en lugar de apoyos visuales"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Por qué es difícil para los maestros cambiar de la palabra al apoyo visual según el texto?",
+            "options": [
+              "Porque los maestros prefieren hablar mucho",
+              "Porque les resulta más fácil simplemente repetir las instrucciones verbales",
+              "Porque implica romper conductas profundamente arraigadas"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué beneficios se mencionan en el texto acerca de sustituir palabras por imágenes en la enseñanza?",
+            "options": [
+              "Aumenta la cantidad de explicaciones verbales",
+              "Reduce la duración de los avisos y previene interrupciones",
+              "Genera más dependencia de los estudiantes"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál es una de las principales razones por las que los maestros recaen en la verbosidad después de la capacitación?",
+            "options": [
+              "Porque los alumnos no entienden las imágenes.",
+              "Porque los hábitos de hablar mucho están profundamente arraigados.",
+              "Porque los planes visuales requieren más tiempo de preparación.",
+              "Porque los alumnos prefieren explicaciones largas."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál es la duración ideal de un aviso puntual para mantener la atención del grupo?",
+            "options": [
+              "30 a 35 segundos.",
+              "20 segundos.",
+              "Menos de 10 segundos.",
+              "Un minuto completo."
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué caracteriza a los VIPs?",
+            "options": [
+              "Son explicaciones verbales detalladas paso a paso.",
+              "Son representaciones visuales que guían cada paso del aprendizaje.",
+              "Son esquemas que reemplazan totalmente al maestro.",
+              "Son listas de tareas sin apoyo gráfico."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué analogía utiliza el autor para explicar la enseñanza visual?",
+            "options": [
+              "La construcción de un edificio.",
+              "La receta de cocina.",
+              "La maqueta de un avión con instrucciones paso a paso.",
+              "El entrenamiento de un atleta."
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Cuál es el principal error en las humanidades según el autor?",
+            "options": [
+              "Usar demasiadas imágenes en lugar de teoría.",
+              "No dejar rastro visual ni estructurar el proceso de trabajo.",
+              "Repetir explicaciones verbales constantemente.",
+              "Permitir demasiada autonomía al estudiante."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál de las siguientes ventajas corresponde al mapeo visual?",
+            "options": [
+              "Aumenta la dependencia del alumno hacia el maestro.",
+              "Permite memorizar mecánicamente sin razonar.",
+              "Ayuda a organizar ideas, mejora la memoria y fomenta la independencia intelectual.",
+              "Sirve únicamente para materias numéricas."
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Capítulo 7: Enseñando a la modalidad visual",
+        "instructions": "Lee nuevamente el resumen del Capítulo 7 y redacta una reflexión personal que responda a las siguientes preguntas:\n\n• ¿Qué hábitos verbales reconozco en mi propia práctica docente?\n• ¿Qué tan consciente soy del tiempo que hablo durante la práctica guiada?\n• ¿En qué momentos mis palabras pueden estar generando dependencia en lugar de autonomía?\n• ¿Cómo podría transformar mis explicaciones verbales en representaciones visuales o acciones prácticas?\n• ¿Qué beneficios tendría esto en mis alumnos y en mi gestión del aula?",
+        "allowFile": false,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Capítulo 8: Integrándote con la modalidad física",
+      "pdf": "M1_06_Capitulo_8_Modalidad_fisica.pdf",
+      "pdfTitle": "Capítulo 8: Integrándote con la modalidad física (lectura)",
+      "quiz": {
+        "title": "Quiz — Capítulo 8",
+        "questions": [
+          {
+            "q": "¿Cuál es el objetivo principal del capítulo 8?",
+            "options": [
+              "Enseñar nuevas estrategias para evaluar a los alumnos.",
+              "Integrar las modalidades verbal, visual y física para erradicar la dependencia.",
+              "Reforzar la enseñanza únicamente con material visual.",
+              "Explicar cómo aumentar la velocidad de aprendizaje."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué se busca al integrar las modalidades verbal, visual y física en la enseñanza?",
+            "options": [
+              "Que los alumnos memoricen temporalmente.",
+              "Que comprendan y retengan a largo plazo lo aprendido.",
+              "Que dependan más de la guía del maestro.",
+              "Que aprendan a través de la repetición auditiva."
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué modalidad se asocia principalmente con la comprensión?",
+            "options": [
+              "Verbal",
+              "Visual",
+              "Física",
+              "Auditiva"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "Según el texto, ¿qué modalidad produce una comprensión inmediata casi sin esfuerzo?",
+            "options": [
+              "Verbal",
+              "Visual",
+              "Física",
+              "Auditiva"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué significa el proverbio chino citado en el capítulo?",
+            "options": [
+              "Que los estudiantes deben escuchar más que practicar.",
+              "Que el aprendizaje solo ocurre mediante la repetición verbal.",
+              "Que el entendimiento profundo se logra al hacer.",
+              "Que la memoria depende del maestro."
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Cuál es el ciclo de enseñanza propuesto por el autor?",
+            "options": [
+              "Decir–repetir–memorizar",
+              "Escuchar–recordar–olvidar",
+              "Decir–ver–hacer",
+              "Ver–preguntar–escribir"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué ocurre cuando la enseñanza se basa únicamente en la palabra hablada?",
+            "options": [
+              "Se fortalece la memoria a largo plazo",
+              "Los alumnos desarrollan autonomía.",
+              "El aprendizaje se vuelve más duradero.",
+              "La información se olvida fácilmente."
+            ],
+            "correct": 3
+          },
+          {
+            "q": "¿Cuál es el enemigo principal de la memoria según el capítulo?",
+            "options": [
+              "La falta de ejemplos",
+              "El tiempo",
+              "El exceso de práctica",
+              "La lectura"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué característica define a la práctica estructurada?",
+            "options": [
+              "Permite cometer errores libremente.",
+              "Se centra solo en la velocidad.",
+              "Busca la ejecución correcta con el menor margen de error posible.",
+              "Se realiza sin supervisión del maestro."
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué representa la frase “La práctica no te hace perfecto. Solo la práctica perfecta te hace perfecto”?",
+            "options": [
+              "Que la repetición sin control genera malos hábitos.",
+              "Que cualquier práctica lleva a la perfección.",
+              "Que la rapidez es más importante que la precisión.",
+              "Que practicar en casa es suficiente."
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Capítulo 8: Integrándote con la modalidad física",
+        "instructions": "Diseña una mini lección sobre un tema de tu área (por ejemplo, fracciones, fotosíntesis, redacción de un párrafo, historia de la independencia, etc.). Aplica el modelo Decir–Ver–Hacer descrito en el capítulo. Tu entrega debe incluir tres apartados:\n\n1. Decir (Explicación): describe en un párrafo cómo explicarías el tema a tus alumnos con tus propias palabras (breve, clara y motivante).\n2. Ver (Demostración o modelado): explica cómo mostrarías el proceso o el concepto.\n• Puedes incluir ejemplos, imágenes o una demostración práctica.\n3. Hacer (Práctica estructurada): diseña una actividad en la que tus alumnos practiquen lo aprendido inmediatamente después de la explicación. Debe ser guiada, con bajo margen de error y enfocada en aplicar correctamente el concepto.",
+        "allowFile": true,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Capítulo 9: Creando Motivación",
+      "pdf": "M1_07_Capitulo_9_Creando_motivacion.pdf",
+      "pdfTitle": "Capítulo 9: Creando Motivación (lectura)",
+      "quiz": {
+        "title": "Quiz — Capítulo 9",
+        "questions": [
+          {
+            "q": "¿Cuál es el propósito central del capítulo 9?",
+            "options": [
+              "Enseñar técnicas de evaluación",
+              "Analizar la motivación y el esmero en el aula",
+              "Proponer castigos disciplinarios",
+              "Describir tipos de currículum"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué dimensión representa la calidad del trabajo escolar?",
+            "options": [
+              "Esmero",
+              "Disciplina",
+              "Excelencia",
+              "Participación"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué tipo de incentivo se basa en el vínculo emocional entre maestro y alumno?",
+            "options": [
+              "Formal",
+              "Informal",
+              "Material",
+              "Competitivo"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué riesgo implica un mal uso de los incentivos?",
+            "options": [
+              "Incrementar la disciplina",
+              "Fortalecer la cooperación",
+              "Fomentar conductas negativas",
+              "Mejorar el rendimiento"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué enseña la “Regla de la Abuela”?",
+            "options": [
+              "A premiar antes de trabajar",
+              "A evitar responsabilidades",
+              "A cumplir con la tarea antes de la recompensa",
+              "A trabajar sin incentivos"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Cómo se define el “criterio de destreza”?",
+            "options": [
+              "Porcentaje de aciertos",
+              "Número de desempeños correctos consecutivos",
+              "Nivel de esfuerzo observado",
+              "Calificación promedio"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué tipo de incentivo genera errores por rapidez?",
+            "options": [
+              "Incentivo de velocidad",
+              "Incentivo de excelencia",
+              "Incentivo de responsabilidad",
+              "Incentivo de reflexión"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Qué finalidad tienen las actividades preferidas?",
+            "options": [
+              "Castigar al estudiante",
+              "Permitir distracción",
+              "Sustituir la tarea académica",
+              "Reforzar el aprendizaje y la motivación"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "¿Qué representa el “Viernes Raro”?",
+            "options": [
+              "Un día sin clases",
+              "Un sistema de libertad condicionada al cumplimiento",
+              "Un día de descanso",
+              "Una evaluación semanal"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Cuál es el principio pedagógico final del capítulo?",
+            "options": [
+              "La disciplina crea resultados",
+              "No hay alegría, no hay trabajo",
+              "El castigo motiva",
+              "La repetición genera aprendizaje"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Capítulo 9: Creando Motivación",
+        "instructions": "Elige una de las siguientes actividades para aplicar lo aprendido sobre la creación de motivación en el salón de clases y súbelo en el formato que quieras:\n\n1. Diseña un mapa mental que muestre los principales elementos de la motivación educativa y los sistemas de incentivos.\n2. Elabora un dibujo o infografía que represente la “Regla de la Abuela” y su aplicación práctica en clase.\n3. Redacta un resumen de una cuartilla explicando cómo un sistema de incentivos puede transformar el ambiente del aula.\n4. Escribe un breve ensayo (una cuartilla) en el que analices el equilibrio entre esmero y excelencia como clave para el aprendizaje autónomo.",
+        "allowFile": true,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Capítulo 10: Proporcionando responsabilidad y excelencia",
+      "pdf": "M1_08_Capitulo_10_Responsabilidad_y_excelencia.pdf",
+      "pdfTitle": "Capítulo 10: Proporcionando responsabilidad y excelencia (lectura)",
+      "quiz": {
+        "title": "Quiz — Capítulo 10",
+        "questions": [
+          {
+            "q": "¿Cuál es el objetivo principal del Capítulo 10?",
+            "options": [
+              "Analizar las causas del bajo rendimiento escolar",
+              "Explicar cómo la responsabilidad conduce a la excelencia educativa",
+              "Describir estrategias de disciplina punitiva",
+              "Presentar métodos de evaluación estandarizada"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "Según el texto, ¿qué representa el “criterio de destreza”?",
+            "options": [
+              "Un sistema de calificación porcentual",
+              "Un estándar de velocidad y productividad",
+              "Una exigencia de realizar correctamente el trabajo antes de avanzar",
+              "Una competencia entre alumnos para obtener mejores notas"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Qué diferencia existe entre el control de calidad en la producción y el control de calidad en la postproducción?",
+            "options": [
+              "El primero corrige errores antes de que ocurran, el segundo después",
+              "El primero evalúa exámenes y el segundo tareas",
+              "El primero es exclusivo de la industria, el segundo de la educación",
+              "No existe diferencia significativa"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Qué principio resume la filosofía del control de calidad educativo?",
+            "options": [
+              "“El error es parte del aprendizaje”",
+              "“Siempre es más barato construirlo bien desde la primera vez”",
+              "“Cuantas más tareas se revisen, mejor aprendizaje se obtiene”",
+              "“El maestro debe hacer el trabajo por los alumnos”"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué caracteriza al modelo educativo eficiente descrito en el capítulo?",
+            "options": [
+              "El maestro asume toda la responsabilidad del aprendizaje",
+              "Los alumnos trabajan solos sin supervisión",
+              "Se enfoca en castigar los errores",
+              "El maestro revisa el trabajo durante la práctica guiada"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "¿Qué propósito tienen los “círculos de control de calidad” en el aula?",
+            "options": [
+              "Evaluar al maestro",
+              "Promover la supervisión colaborativa y la responsabilidad compartida",
+              "Sustituir la enseñanza tradicional",
+              "Reemplazar los exámenes escritos"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué efecto produce involucrar a los estudiantes en la revisión del trabajo?",
+            "options": [
+              "Incrementa el desorden y la falta de control",
+              "Ralentiza el proceso de enseñanza",
+              "Fomenta la honestidad, la autocrítica y la precisión",
+              "Disminuye la motivación y el interés"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "¿Cuál es el nuevo rol del docente según el enfoque del capítulo?",
+            "options": [
+              "Calificar y corregir todo el trabajo del alumno",
+              "Ser un supervisor de calidad y guía del proceso de aprendizaje",
+              "Controlar la disciplina mediante sanciones",
+              "Evaluar únicamente los resultados finales"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Capítulo 10: Proporcionando responsabilidad y excelencia",
+        "instructions": "Análisis comparativo: contrasta los modelos “trabajar hasta morir” y “decir, ver y hacer”, destacando sus diferencias en la carga docente y el aprendizaje.",
+        "allowFile": false,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Capítulo 11: Rutinas de Enseñanza",
+      "pdf": "M1_09_Capitulo_11_Rutinas_de_ensenanza.pdf",
+      "pdfTitle": "Capítulo 11: Rutinas de Enseñanza (lectura)",
+      "quiz": {
+        "title": "Quiz — Capítulo 11",
+        "questions": [
+          {
+            "q": "¿Qué destaca el capítulo 11 sobre las rutinas de enseñanza?",
+            "options": [
+              "La importancia de establecer reglas, procedimientos y hábitos claros en el aula para el aprendizaje efectivo.",
+              "No hay necesidad de reglas en el aula, ya que pueden limitar la creatividad de los alumnos.",
+              "Las reglas solo se deben imponer a través de prohibiciones, sin enfocarse en crear una estructura positiva.",
+              "Las rutinas no son necesarias en el proceso de enseñanza."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Cuál es la función de las reglas generales dentro del aula?",
+            "options": [
+              "Establecer expectativas globales sobre conducta y convivencia.",
+              "Desempeñar únicamente un papel decorativo en el aula.",
+              "Crear confusión entre los alumnos al no ser claras.",
+              "No tener relevancia en el aprendizaje de los estudiantes."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Cómo se sugiere enseñar los procedimientos en el aula?",
+            "options": [
+              "Con la misma profundidad que cualquier materia académica, utilizando los ciclos de decir, ver y hacer.",
+              "Saltándose la práctica y la repetición, ya que puede resultar aburrido para los alumnos.",
+              "Evitando hacer énfasis en la importancia de los procedimientos en la dinámica escolar.",
+              "Dejando que los alumnos descubran por sí mismos cómo realizar las acciones."
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Cuál es la principal diferencia entre las reglas generales y los procedimientos específicos?",
+            "options": [
+              "Las primeras se aplican a todo el colegio y las segundas solo a casa",
+              "Las reglas generales expresan valores; los procedimientos indican cómo actuar",
+              "Las reglas son más estrictas que los procedimientos",
+              "Las reglas son más estrictas que los procedimientos"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué recomienda el autor respecto a enseñar rutinas en el aula?",
+            "options": [
+              "Enseñarlas una sola vez al inicio del curso",
+              "Mencionarlas sin dedicar tiempo a practicarlas",
+              "Enseñarlas con la misma profundidad que un tema académico",
+              "Dejar que los alumnos las descubran solos"
+            ],
+            "correct": 2
+          },
+          {
+            "q": "Según el capítulo, ¿qué determina las normas reales de un salón de clases?",
+            "options": [
+              "Las reglas escritas en el pizarrón",
+              "Las órdenes del director",
+              "Las calificaciones del grupo",
+              "Lo que los alumnos pueden salirse con la suya"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "¿Qué significa “monopolizar el reforzamiento”?",
+            "options": [
+              "Reforzar solamente a los alumnos con buenas notas",
+              "Controlar los incentivos y elogios para evitar que los compañeros premien la mala conducta",
+              "Evitar cualquier tipo de retroalimentación",
+              "Permitir que los alumnos se corrijan entre sí sin intervención docente"
+            ],
+            "correct": 1
+          },
+          {
+            "q": "¿Qué enseñanza se transmite con la frase “Hazlo una vez bien o hazlo todo el año”?",
+            "options": [
+              "Que las rutinas deben practicarse constantemente hasta perfeccionarse",
+              "Que los maestros deben ser flexibles con los errores",
+              "Que las reglas pueden modificarse durante el semestre",
+              "Que no es necesario enseñar rutinas"
+            ],
+            "correct": 0
+          },
+          {
+            "q": "¿Cuál es la función de las “labores del salón de clases”?",
+            "options": [
+              "Premiar a los alumnos con menos participación",
+              "Sustituir al maestro en sus tareas principales",
+              "Reducir el tiempo de enseñanza formal",
+              "Fomentar el sentido de responsabilidad y colaboración dentro del grupo"
+            ],
+            "correct": 3
+          },
+          {
+            "q": "¿Por qué es fundamental el primer contacto con los padres de familia?",
+            "options": [
+              "Porque determina si serán aliados o adversarios durante el año escolar",
+              "Porque el maestro debe pedir apoyo económico",
+              "Porque los padres deben aprobar las reglas del colegio",
+              "Porque el maestro debe informar sobre las calificaciones iniciales"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      "homework": {
+        "title": "Tarea abierta — Capítulo 11: Rutinas de Enseñanza",
+        "instructions": "Elige una de las siguientes actividades para aplicar los conceptos del capítulo en tu práctica docente:\n\n• Diseño de rutina: elabora una rutina de clase (por ejemplo, entrada al aula o entrega de tareas) e incluye los pasos concretos para enseñarla siguiendo el modelo decir, ver y hacer.\n• Mapa conceptual: crea un esquema que relacione los elementos principales: reglas generales, procedimientos específicos, labores y comunicación con padres.\n• Ensayo reflexivo: redacta una cuartilla explicando por qué la organización proactiva es más efectiva que la reactiva en la enseñanza.\n• Simulación práctica: diseña una breve dramatización para mostrar cómo enseñarías a tus alumnos una rutina básica, incluyendo retroalimentación y práctica guiada.",
+        "allowFile": true,
+        "allowText": true
+      }
+    }
+  ]
+}

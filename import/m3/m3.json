@@ -1,0 +1,63 @@
+{
+  "course": {
+    "title": "Módulo 3: Educación, Inclusión y Límites desde los Derechos Humanos",
+    "description": "Casos prácticos y plan personal de convivencia docente · Colegio Senda · Plataforma Team Meet.",
+    "published": true
+  },
+  "modules": [
+    {
+      "title": "Introducción",
+      "pdf": "M3_01_Introduccion.pdf",
+      "pdfTitle": "Introducción (lectura)"
+    },
+    {
+      "title": "Caso 1: Mateo y el equilibrio entre inclusión y límites",
+      "pdf": "M3_02_Caso_1_Mateo.pdf",
+      "pdfTitle": "Caso 1: Mateo y el equilibrio entre inclusión y límites (lectura)",
+      "homework": {
+        "title": "Tarea abierta — Caso 1: Mateo y el equilibrio entre inclusión y límites",
+        "instructions": "Tarea 1:\n\nRedacta tres frases breves que utilizarás en situaciones de impulsividad o conflicto.\nPuedes subir este documento en el formato que quieras:\n\n• una para marcar un límite,\n• una para validar la emoción,\n• una para restaurar el daño.\n\nEstas frases serán tu kit de intervención inmediata en momentos críticos.\n\nTarea 2:\n\nEscribe un micro-protocolo que te guíe cuando un alumno muestre conductas impulsivas.\nIncluye cinco pasos esenciales: detener la conducta, proteger al grupo, ayudar a regular, restaurar el daño, registrar brevemente. Este plan debe ser claro, concreto y aplicable “mañana mismo”. Puedes subirlo en el formato que te sea más cómodo.",
+        "allowFile": true,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Caso 2: María Luisa y el uso indebido de tecnología",
+      "pdf": "M3_03_Caso_2_Maria_Luisa.pdf",
+      "pdfTitle": "Caso 2: María Luisa y el uso indebido de tecnología (lectura)",
+      "homework": {
+        "title": "Tarea abierta — Caso 2: María Luisa y el uso indebido de tecnología",
+        "instructions": "Tarea 1:\n\nElabora una lista de cinco acciones que llevarás a cabo desde el momento en que identificas imágenes inapropiadas hasta la comunicación con las familias. Incluye contención, revisión privada, reflexión con la alumna y notificación responsable.\n\nTarea 2:\n\nCrea una sola frase, clara y repetible, que utilizarás para formar a tus estudiantes en consentimiento digital. Ejemplo: “En tecnología, igual que en la vida, pedimos permiso antes de registrar imágenes de alguien.” Tu frase será un recordatorio permanente en tu práctica docente.",
+        "allowFile": true,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Caso 3: Martín y las burlas constantes",
+      "pdf": "M3_04_Caso_3_Martin.pdf",
+      "pdfTitle": "Caso 3: Martín y las burlas constantes (lectura)",
+      "homework": {
+        "title": "Tarea abierta — Caso 3: Martín y las burlas constantes",
+        "instructions": "Tarea 1:\n\nEscribe un párrafo breve (4–5 líneas) que incluya: reconocimiento del valor del alumno, el límite respecto a su conducta, la necesidad de reparar, la expectativa de cambio. Este texto será una guía para intervenir sin etiquetar ni humillar.\n\nTarea 2:\n\nSelecciona solo una de estas prácticas: ritual breve de bienvenida, tarjeta de gratitud semanal, palabra amable del día. Describe en tres líneas: qué actividad elegiste, cómo la aplicarás, cuándo la implementarás. Elige la que realmente puedas sostener cada semana.",
+        "allowFile": true,
+        "allowText": true
+      }
+    },
+    {
+      "title": "Conclusión",
+      "pdf": "M3_05_Conclusion.pdf",
+      "pdfTitle": "Conclusión (lectura)"
+    },
+    {
+      "title": "Tarea Final",
+      "pdf": "M3_06_Tarea_Final.pdf",
+      "pdfTitle": "Tarea Final (lectura)",
+      "homework": {
+        "title": "Tarea Final: Plan Personal de Convivencia Docente",
+        "instructions": "Construye un Plan Personal de Convivencia Docente\n1. Redacta dos enunciados que guiarán tu disciplina y convivencia. Ejemplo: “En mi aula, la dignidad siempre se protege.”\n2. Describe una estrategia que realmente puedas implementar (pausa, respiración, tarjeta de regulación, espacio seguro). Incluye: cuándo se usa, cómo se aplica y qué señal de calma esperas observar.\n3. Elige una (disculpa guiada o acción útil de reparación) y explica en tres líneas: cómo se realiza, cuánto tiempo requiere y cómo sabrás que fue efectiva.\n4. Elige o crea una frase breve que te recuerde tu enfoque ético. Ejemplo: “Primero contengo, luego intervengo.”",
+        "allowFile": true,
+        "allowText": true
+      }
+    }
+  ]
+}

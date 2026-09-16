@@ -1,0 +1,24 @@
+{
+  "course": {
+    "title": "Módulo 2: Enfoque Comunicativo y Estándares Europeos",
+    "description": "La metodología de enseñanza del inglés en Colegio Senda (MCER, CLIL/CLIL-T) · Plataforma Team Meet.",
+    "published": true
+  },
+  "modules": [
+    {
+      "title": "Introducción al Modelo Comunicativo y Estándares Europeos (MCER)",
+      "pdf": "M2_01_Introduccion_Modelo_Comunicativo_MCER.pdf",
+      "pdfTitle": "Introducción al Modelo Comunicativo y Estándares Europeos (MCER) (lectura)"
+    },
+    {
+      "title": "CLIL y el Colegio Senda",
+      "pdf": "M2_02_CLIL_y_el_Colegio_Senda.pdf",
+      "pdfTitle": "CLIL y el Colegio Senda (lectura)"
+    },
+    {
+      "title": "Bibliografía Sugerida",
+      "pdf": "M2_03_Bibliografia_Sugerida.pdf",
+      "pdfTitle": "Bibliografía Sugerida (lectura)"
+    }
+  ]
+}
