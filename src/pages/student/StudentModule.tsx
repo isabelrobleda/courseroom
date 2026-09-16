@@ -109,7 +109,7 @@ function QuizBlock({ quiz, questions, attempts, uid, onDone, readOnly }: { quiz:
   }
 
   return (
-    <section className="mt-12 rounded-2xl border-2 border-mint/30 bg-mint-soft/40 p-6">
+    <section className="mt-12 rounded-2xl border-2 border-lime/60 bg-mint-soft/50 p-6">
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-xl font-extrabold">{quiz.title}</h2>
         {best && <span className="badge bg-mint text-white">Mejor: {best.score}/{best.total}</span>}
@@ -140,8 +140,8 @@ function QuizBlock({ quiz, questions, attempts, uid, onDone, readOnly }: { quiz:
               <div className="mb-2 font-semibold">{i + 1}. {q.question}</div>
               <div className="space-y-1.5">
                 {q.options.map((o, j) => (
-                  <label key={j} className={`flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2 text-sm ${answers[q.id] === j ? 'border-ink bg-ink/5' : 'border-ink/10 hover:bg-ink/5'}`}>
-                    <input type="radio" name={q.id} className="accent-ink" checked={answers[q.id] === j} onChange={() => setAnswers({ ...answers, [q.id]: j })} /> {o}
+                  <label key={j} className={`flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2 text-sm ${answers[q.id] === j ? 'border-accent bg-accent-soft' : 'border-ink/10 hover:bg-ink/5'}`}>
+                    <input type="radio" name={q.id} className="accent-accent" checked={answers[q.id] === j} onChange={() => setAnswers({ ...answers, [q.id]: j })} /> {o}
                   </label>
                 ))}
               </div>
@@ -183,7 +183,7 @@ function HomeworkBlock({ hw, subs, uid, onDone, readOnly }: { hw: Homework; subs
   }
 
   return (
-    <section className="mt-12 rounded-2xl border-2 border-accent/30 bg-accent-soft/40 p-6">
+    <section className="mt-12 rounded-2xl border-2 border-accent/40 bg-accent-soft/50 p-6">
       <h2 className="mb-1 text-xl font-extrabold">{hw.title}</h2>
       {hw.instructions && <p className="mb-4 whitespace-pre-wrap text-ink/70">{hw.instructions}</p>}
       {subs.length > 0 && (

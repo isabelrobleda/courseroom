@@ -4,7 +4,7 @@ import { useAuth } from '../lib/auth'
 import type { ReactNode } from 'react'
 
 const link = ({ isActive }: { isActive: boolean }) =>
-  `flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition ${isActive ? 'bg-ink text-white' : 'text-ink/70 hover:bg-ink/5'}`
+  `flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition ${isActive ? 'bg-accent text-white' : 'text-ink/70 hover:bg-accent-soft'}`
 
 export default function Layout({ children }: { children: ReactNode }) {
   const { profile, signOut } = useAuth()
@@ -14,8 +14,8 @@ export default function Layout({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-10 border-b border-ink/10 bg-paper/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3">
           <NavLink to={isAdmin ? '/admin' : '/'} className="mr-4 flex items-center gap-2 font-extrabold tracking-tight">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-accent text-white"><GraduationCap size={18} /></span>
-            Courseroom
+            <img src="/teammeet.png" alt="Team Meet" className="h-9 w-9" />
+            <span className="hidden sm:inline"><span className="text-accent">Team</span> <span className="text-mint">Meet</span></span>
           </NavLink>
           <nav className="flex flex-1 items-center gap-1 overflow-x-auto">
             {isAdmin ? (

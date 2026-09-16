@@ -37,7 +37,7 @@ export default function AdminModule() {
 
   if (!mod) return null
   const tabBtn = (t: typeof tab, label: string) => (
-    <button onClick={() => setTab(t)} className={`rounded-lg px-4 py-2 text-sm font-semibold ${tab === t ? 'bg-ink text-white' : 'bg-white hover:bg-ink/5'}`}>{label}</button>
+    <button onClick={() => setTab(t)} className={`rounded-lg px-4 py-2 text-sm font-semibold ${tab === t ? 'bg-accent text-white' : 'bg-white hover:bg-accent-soft'}`}>{label}</button>
   )
 
   return (

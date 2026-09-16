@@ -1,5 +1,4 @@
 import { useState, type FormEvent } from 'react'
-import { GraduationCap } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import { ErrorBox } from '../components/ui'
 
@@ -40,9 +39,9 @@ export default function Login() {
   return (
     <div className="grid min-h-screen place-items-center px-4">
       <div className="w-full max-w-sm">
-        <div className="mb-8 flex items-center justify-center gap-2 text-2xl font-extrabold tracking-tight">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-accent text-white"><GraduationCap size={22} /></span>
-          Courseroom
+        <div className="mb-6 flex flex-col items-center gap-2">
+          <img src="/teammeet.png" alt="Team Meet" className="h-36 w-36" />
+          <div className="text-sm font-semibold text-ink/50">Colegio Senda · Formación docente</div>
         </div>
         <form onSubmit={submit} className="card space-y-4">
           <div className="grid grid-cols-2 rounded-lg bg-ink/5 p-1 text-sm font-semibold">
